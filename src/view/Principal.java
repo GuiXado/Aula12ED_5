@@ -21,13 +21,12 @@ public class Principal {
             c.inserir(p4);
             c.inserir(p5);
 
-            
-            Pessoa resultado = c.buscar("Guilherme");
-            System.out.println("Encontrado: " + resultado);
+			
+            c.Mostrarbusca("Guilherme");
 
             c.excluir("Guilherme");
             
-            System.out.println("Encontrado: " + c.buscar("Guilherme"));
+            c.Mostrarbusca("Guilherme");
           
 
         } catch (Exception e) {
@@ -37,3 +36,4 @@ public class Principal {
 	}
 
 }
+
